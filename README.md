@@ -28,3 +28,12 @@ This repository contains a Streamlit UI and a backend that loads a HuggingFace c
     streamlit run ui/app.py
     ```
     This will open the application in your web browser, usually at `http://localhost:8501`.
+
+
+5.  **Install PyTorch with CUDA support (IMPORTANT)
+    ```bash
+    pip install torch --index-url https://download.pytorch.org/whl/cu121
+    ```
+    Your RTX 3060 uses CUDA 12.1, so install the correct GPU version:cu121
+
+    
