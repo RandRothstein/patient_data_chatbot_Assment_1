@@ -5,7 +5,11 @@ This repository contains a Streamlit UI and a backend that loads a HuggingFace c
 
 ## Quickstart
 
-1. Create a Python environment (recommended: Python 3.10+)
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+1. Create a Python environment
+
+Recommended: Python 3.10+
+
+python -m venv venv
+source venv/bin/activate   # Linux / macOS
+venv\Scripts\activate      # Windows
+
