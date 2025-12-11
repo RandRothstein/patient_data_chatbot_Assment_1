@@ -1,3 +1,46 @@
+# -----------------------------------
+# 1. LARGE DATA FILES (Primary Fix for 2.51 GB Push Error)
+# -----------------------------------
+
+# Ignore the entire sample_data folder which contains the large CSV files
+sample_data/
+
+# Ignore the large data files directly, in case they are accidentally placed elsewhere
+Health_Dataset_1_Sample.csv
+Health_Dataset_2_Sample.csv
+*.csv # Generic rule to ignore all CSV files (common practice for data projects)
+
+
+# -----------------------------------
+# 2. PYTHON ENVIRONMENTS AND CACHES
+# -----------------------------------
+
+# Ignore the 'patient' folder, as it was identified as a potential environment or data dump
 patient/
-app/__pycache__/
+
+# Ignore common virtual environment folders
+venv/
+.venv/
+env/
+
+# Ignore Python bytecode and temporary files
 __pycache__/
+*.pyc
+*.log
+
+
+# -----------------------------------
+# 3. SYSTEM, STREAMLIT, AND IDE FILES
+# -----------------------------------
+
+# Streamlit-specific cache and configuration directories
+.streamlit/
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore VS Code specific settings
+.vscode/
+
+# Ignore output files that might be generated during runtime
+*.tmp
