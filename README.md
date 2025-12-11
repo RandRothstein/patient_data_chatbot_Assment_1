@@ -36,4 +36,9 @@ This repository contains a Streamlit UI and a backend that loads a HuggingFace c
     ```
     Your RTX 3060 uses CUDA 12.1, so install the correct GPU version:cu121
 
+
+6.  ** To check your GPU
+    ```bash
+    python -c "import torch; print(torch.cuda.is_available())"
+    ```
     
