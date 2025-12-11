@@ -5,11 +5,26 @@ This repository contains a Streamlit UI and a backend that loads a HuggingFace c
 
 ## Quickstart
 
-1. Create a Python environment
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+    cd YOUR_REPOSITORY_NAME
+    ```
+    (Replace `YOUR_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub details)
 
-Recommended: Python 3.10+
+2.  **Create a virtual environment (recommended):**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
 
-python -m venv venv
-source venv/bin/activate   # Linux / macOS
-venv\Scripts\activate      # Windows
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+4.  **Run the Streamlit application:**
+    ```bash
+    streamlit run ui/app.py
+    ```
+    This will open the application in your web browser, usually at `http://localhost:8501`.
